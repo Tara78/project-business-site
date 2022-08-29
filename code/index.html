@@ -3,47 +3,102 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 3</title>
-    <!-- dont forget to add a css file and link it here! -->
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- video or image as a header is cool :) -->
     <div class="navbar">
       <div class="logo">
         <img src="../img/toptal-logo.png" alt="" width="80px">
       </div>
-      <div class="navbar nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact us</li>
-        <li>Find More</li>
+      <div class="navbarNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a name="findMore">More Information</a></li>
       </div>
     </div>
     <div class="hero">
-      <img src="../img/background.jpg" alt="">
+      <h1 class="hero-heading">Technigo Group</h1>
+    
     </div>
 
-    <div class="container">
-<!-- Signup form -->
-<section class="form">
+    <section class="container">
+<!-- Signup form  Left side -->
+  <div class="form">
+    <div class="info">
+      <h2>Fill the form below</h2>
+    <form id="main_form" action="https://httpbin.org/anything" method="post">
+    <input type="text" placeholder="name" class="form-control" id="name">
+    <input type="text" placeholder="last name" class="form-control" id="lastName">
+    <input type="email" placeholder="email" class="form-control" id="email">
+      <input type="password" placeholder="type your password" class="form-control" id="password">
+    
+  <select class="form-control" >
+    <option value="1">Client</option>
+    <option value="2">Student</option>
+    <option value="3">Developer</option>
+    <option value="4">Other</option>
+  </select>
+
+  <p>I accept the term and condition <input type="checkbox" class="check"></p>
+  <p>I wanna news letter <input type="checkbox" class="check"></p>
+
+  <button class="formbtn" type="submit"> Sign up</button>
+<br>
+  <a href="#findMore" id="info">More information</a>
+
+  </form>
+  </div>
+  </div>
  
-</section>
 
-    <section class="accordion">
+<!-- Right Side -->
+
+    <section >
       <!-- Accordion -->
-      <h1>FAQ</h1>
+      <h2 class="faq-heading">FAQ</h2>
 
-      <div class="question" id="section1">Section 1</div>
+     <!-- Question nr1 and answer -->
+      
+      <button class="accordion">
+        <h4>1- Which kind of the service you are providing?</h4>
+      </button>
       <div class="answer">
         <p>Lorem ipsum...</p>
       </div>
 
-      <div class="question" id="section2">Section 2</div>
+
+      <!-- Question nr2 and answer -->
+      <button class="accordion">
+      <h4>2- How long you are giving us the service</h4>
+      </button>
+
       <div class="answer">
         <p>Lorem ipsum...</p>
       </div>
+  <!-- Question nr3 and answer -->
+        <button class="accordion">
+        <h4>3- Who can have discount</h4>
+      </button>
+    
+      <div class="answer">
+        <p>Lorem ipsum...</p>
+      </div>
+
+    <!-- Question nr4 and answer -->
+        <button class="accordion">
+        <h4>4- Payment methods</h4>
+      </button>
+     
+      <div class="answer">
+        <p>Lorem ipsum...</p>
+      </div>
+
     </section>
-    </div>
-    <!-- dont forget to link the javascript file here! -->
+  </section>
+
+   <script src="script.js"></script>
   </body>
 </html>
